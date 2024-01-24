@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pexels-rovenimagescom-949587.jpg);
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.625rem;
+    overflow: scroll;
+}
+
+main>h1{
+    font-size: 6rem;
+    color: #d2efea;
+    text-align: center;
+}
+
+#btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+#btn-container button{
+    padding: 0.625rem;
+    width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.099),rgb(235, 159, 159));
+}
+
+#btn-container>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.btn-enabled{
+    cursor: pointer;
+}
+
+.btn-disabled{
+    cursor: not-allowed;
+}
+
+#lap-data{
+    width: 320px;
+    height: 400px;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 5px 5px #969595;
+    margin-top: 1rem;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+#lap-data::-webkit-scrollbar{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.lap-card{
+    background-color: rgb(159, 74, 74);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+    border-radius: 0.625rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
